@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Squada One", cursive;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar h1 {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+  margin-top: 20px;
+}
+.nav-bar a {
+  font-family: "Squada One", cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: rgb(255, 145, 0);
+}
+.nav-bar a:hover {
+  color: black;
+  transition: 0.5s;
+}
+.navlinks {
+  margin-top: 20px;
+}
+.night {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.night .mode {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border: 2px solid rgb(255, 145, 0);
+  font-family: "Squada One", cursive;
+}
+.mode:hover {
+  background-color: white;
+  color: rgb(255, 145, 0);
+  cursor: pointer;
+}
+hr {
+  margin: 9px 30px 10px 9px;
+}
+span {
+  opacity: 0;
+  transition: 0.3s all ease;
+  transform: translateX(150px);
+  display: inline-block;  
+}
+span.fade{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: gray;
+  margin:10px;
+  padding: 10px;
+  height: 430px;
+}
+.v-name{
+  background: black;
+  border:none;
+  border:1px solid  rgb(255, 145, 0);
+  font-size: 15px;
+  padding: 5px;
+  color:white;
+}
+.price{
+  background: black;
+  border:none;
+  border:1px solid  rgb(255, 145, 0);
+  font-size: 15px;
+  padding: 5px;
+  color:white;
+}
+.error{
+  margin:5px;
+}
+.btn{
+  font-family: "Squada One", cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: rgb(255, 145, 0);
+}
+.btn:hover{
+  background: black;
+  border:1px solid  rgb(255, 145, 0);
+  color:white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container{
+  
+  width: 900px;
+  height: 300px;
+  margin: 30px;
+  
+}
+.cont-headings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.results{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list{
+  min-width: 30%;
+  list-style: none;
+}
+.listclass{
+  min-width: 400px;
+  margin: 10px;
+  background: white;
+  color:black;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.removebt{
+    font-family: "Squada One", cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(255, 145, 0);
+}
+.removebt:hover{
+    background: black;
+    border: 1px solid rgb(255, 145, 0);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 890px) {
+  .nav-bar h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .nav-bar h1 {
+    font-size: 30px;
+  }
+}

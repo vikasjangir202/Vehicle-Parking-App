@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Parking</title>
+    <link rel="stylesheet" href="./car.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav and heading start -->
+
+    <nav class="nav-bar">
+      <h1 class="heading" id="heads">Welcome to Vehicle Parking Place</h1>
+      <div class="navlinks">
+        <a href="#" class="nav-links">How it works?</a>
+        <a href="#" class="nav-links">Credits</a>
+      </div>
+      <div class="night">
+        <button onclick="night()" class="mode" >Night Mode</button>
+      </div>
+    </nav>
+    <hr />
+    <!--Nav and heading END-->
+
+    <!--Main content START-->
+      <div class="buttons">
+        <form action="">
+          <input type="text" name="vehicle-name" class="v-name" placeholder="Enter vehicle name" >
+          <input type="text" name="vehicle-price" class="price" placeholder="Enter parking price">
+          <button  type="submit" id="clear" class="btn">Clear all</button>                    
+          <button type="submit" id="add" class="btn">Add</button>
+        </form>
+        <p id="error" class="error"></p>
+        <div class="container">
+          <div class="cont-headings">
+            <h2 class="cont-head1">Vehicle Name</h2>
+            <h2 class="cont-head2">Price</h2>
+          </div>
+          <div class="results" id="rr">
+            <ul class="list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!--Main content END-->
+
+    <script type="module" src="car.js"></script>
+  </body>
+</html>
